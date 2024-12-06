@@ -2,10 +2,10 @@ import axios, { AxiosPromise } from "axios"
 import { CarroData } from "../interface/CarroData";
 import { useQuery } from "@tanstack/react-query";
 
-const API_URL = 'http://54.161.48.63:8080'
+const API_URL = 'http:/localhost:8080'
 
 const fetchData = async(): AxiosPromise<CarroData[]> => {
-    const response = axios.get(API_URL + '/carro');
+    const response = axios.get(API_URL + '/api/carro/listar');
     return response;
 }
 export function useCarroData(){
