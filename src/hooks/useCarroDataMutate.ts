@@ -2,10 +2,10 @@ import axios, { AxiosPromise } from "axios"
 import { CarroData } from "../interface/CarroData";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 
-const API_URL = 'http://54.161.48.63:8080'
+const API_URL = 'http://localhost:8080'
 
 const postData = async(data:CarroData): AxiosPromise<any> => {
-    const response = axios.post(API_URL + '/carro',data);
+    const response = axios.post(API_URL + '/api/carro/adicionar',data);
     return response;
 }
 export function useCarroDataMutate(){
