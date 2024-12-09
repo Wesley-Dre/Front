@@ -7,16 +7,7 @@ import { CreateModal } from './components/createModal/createModal';
 import logo from './components/images/logo.png';
 import {Instagram, Person, Whatsapp} from 'react-bootstrap-icons';
 
-function App2() {
-    return (
-      <>
-        <div> <Person/> Login </div>
-        <div> <Instagram/> Instagram </div>
-        <div> <Whatsapp/> Whatsapp  </div>
-        
-      </>
-    );
-  }
+
 
 
 
