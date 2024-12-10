@@ -5,7 +5,7 @@ import { useMutation} from "@tanstack/react-query";
 const API_URL = 'http://34.204.143.229:8080'
 
 const postData = async(data:CarroData): AxiosPromise<any> => {
-    const response = axios.post(API_URL + '/carro',data);
+    const response = axios.post(API_URL + '/api/carro/adicionar',data);
     return response;
 }
 export function useCarroDataMutate(){
